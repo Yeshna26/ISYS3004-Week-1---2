@@ -1,0 +1,83 @@
+
+body {
+    font-family: helvetica, sans-serif;
+    margin: 0 auto;  /* center the image */
+    margin-top: 40px; /* move top of page down a little */
+    width: 60%;  /* use 60% of the page, allows element to 'scale' proportionally */
+    background-color: #fff;
+    border: 10px solid #044375;  /* draw a solid boarder around the element */
+    padding: 10px; 
+}
+
+p { /* lets make sure paragraphs have space around the text and not touching other elements */
+    margin: 2px;
+    padding: 3px;
+}
+
+header {
+    height: 250px;
+    background-image: url("https://i.imgur.com/KjdQTqs.jpeg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+header h1 {
+    padding: 30px 0 30px 30px;
+    color: black;
+    font-weight: bolder;  /* make text 'bold' */
+    letter-spacing: -1px;  /* stylistic choice, there is a 'lot' you can control with CSS, Google for options */
+}
+
+nav {
+    margin: 10px 0 0 0;
+    padding: 10px;
+    background-color: #044375;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover { /* Pseudo Class, nowhere in the document is there a 'id' or 'class' called 'hover'.
+    lets change the appearance a anchor link when we hover the mouse over the element.  You can
+    style 'hover' for any element, more common for anchor links which are used for navigation */
+    background-color: #ddd;
+    color: black;
+}
+
+#featured {
+    float: left;  /* start at the left */
+    width: 100%;  /* take up the complete 'row' */
+}
+
+#content {
+    float: left;
+    width: 65%;
+}
+
+#extras {
+    float: right;
+    width: 20%;
+}
+
+#extras h2 {
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #eee;
+}
+
+#extras p {
+    font-size: 50%;
+    text-align: center;
+    line-height: normal;
+}
+
+footer {
+    clear: both; /* change back to vertical flow (default) */
+    padding: 10px;
+    background-color: #eee;
+}
